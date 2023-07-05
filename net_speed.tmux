@@ -15,9 +15,9 @@ do_interpolation() {
 	local input=$1
     local result=""
 
-	result=${input/$download_interpolation/$download_speed}
-	result=${result/$net_interpolation/$net_speed}
-	result=${result/$upload_interpolation/$upload_speed}
+	result=${input//$download_interpolation/$download_speed}
+	result=${result//$net_interpolation/$net_speed}
+	result=${result//$upload_interpolation/$upload_speed}
 
 	echo $result
 }
